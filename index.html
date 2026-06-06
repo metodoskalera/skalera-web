@@ -43,7 +43,6 @@ footer{background:#1B4D45;padding:20px 24px}
 .footer-links a{display:block;font-size:11px;color:rgba(255,255,255,.6);text-decoration:none;margin-bottom:4px}
 .footer-legal{font-size:10px;color:rgba(255,255,255,.3);margin-top:14px;text-align:center;width:100%;padding-top:12px;border-top:.5px solid rgba(255,255,255,.1)}
 .float-wa{position:fixed;bottom:20px;right:20px;background:#25D366;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 14px rgba(37,211,102,.4);text-decoration:none;font-size:22px}
-/* MODAL */
 .modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:999;align-items:center;justify-content:center;padding:16px}
 .modal-bg.open{display:flex}
 .modal{background:#fff;border-radius:12px;padding:24px;max-width:480px;width:100%;max-height:90vh;overflow-y:auto;position:relative}
@@ -63,7 +62,6 @@ footer{background:#1B4D45;padding:20px 24px}
 .cb-legal input{margin-top:2px;flex-shrink:0}
 .btn-next{width:100%;background:#D4AF37;color:#000;border:none;padding:12px;border-radius:7px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;margin-top:4px}
 .btn-back{width:100%;background:transparent;border:none;color:#888;font-size:12px;cursor:pointer;font-family:inherit;padding:8px;margin-top:4px}
-/* RESULTADO */
 .sem-y{background:#FAEEDA;border:1px solid #EF9F27;border-radius:8px;padding:12px;margin-bottom:12px}
 .sem-r{background:#FCEBEB;border:1px solid #E24B4A;border-radius:8px;padding:12px;margin-bottom:12px}
 .sem-g{background:#E1F5EE;border:1px solid #5DCAA5;border-radius:8px;padding:12px;margin-bottom:12px}
@@ -75,7 +73,6 @@ footer{background:#1B4D45;padding:20px 24px}
 </style>
 </head>
 <body>
-
 <nav>
   <div>
     <div class="logo-name">SKALERA&#8482;</div>
@@ -83,7 +80,6 @@ footer{background:#1B4D45;padding:20px 24px}
   </div>
   <button class="btn-gold" onclick="openModal()">Medir mi Skaler&#xF3;metro&#8482;</button>
 </nav>
-
 <section class="hero">
   <h1>Construye la arquitectura de tu negocio:<br><em>Menos ensayo y error,<br>m&#xE1;s resultados claros</em></h1>
   <p>SKALERA&#8482; te muestra exactamente en qu&#xE9; punto est&#xE1;s &#x2014; con acompa&#xF1;amiento humano real y validaci&#xF3;n paso a paso.</p>
@@ -93,7 +89,6 @@ footer{background:#1B4D45;padding:20px 24px}
   </div>
   <p style="font-size:11px;color:#aaa;margin-top:10px">Sin tarjeta de cr&#xE9;dito &#xB7; 3 minutos &#xB7; Diagn&#xF3;stico gratis</p>
 </section>
-
 <section class="espejo">
   <div class="espejo-inner">
     <h2>No est&#xE1;s fallando. Est&#xE1;s avanzando sin una ruta clara.</h2>
@@ -106,7 +101,6 @@ footer{background:#1B4D45;padding:20px 24px}
     <button class="btn-teal" onclick="openModal()" style="background:#fff;color:#1B4D45">&#xBF;Te identificas? Mide tu Skaler&#xF3;metro&#8482; &#x2192;</button>
   </div>
 </section>
-
 <section class="oferta" id="oferta">
   <h2>Exactamente lo que incluye el Nivel 2</h2>
   <p style="font-size:13px;color:#4A4A4A;margin-bottom:24px">Queremos que sepas qu&#xE9; recibes antes de pagar.</p>
@@ -123,7 +117,6 @@ footer{background:#1B4D45;padding:20px 24px}
     <div class="feature"><span class="ico-no">&#x2014;</span><span style="color:#888">Mentor&#xED;a adicional: 150 USD/sesi&#xF3;n</span></div>
   </div>
 </section>
-
 <footer>
   <div class="footer-inner">
     <div>
@@ -140,16 +133,11 @@ footer{background:#1B4D45;padding:20px 24px}
     <div class="footer-legal">Ley 1581 de 2012 &#xB7; Decreto 1377 de 2013 &#xB7; Todos los derechos reservados</div>
   </div>
 </footer>
-
 <a href="https://wa.me/573113053231" class="float-wa" target="_blank" aria-label="WhatsApp">&#x1F4AC;</a>
-
-<!-- MODAL SKALERÓMETRO -->
 <div class="modal-bg" id="modal">
   <div class="modal">
     <button class="modal-close" onclick="closeModal()">&#x2715;</button>
     <div class="progress-bar"><div class="progress-fill" id="prog" style="width:0%"></div></div>
-
-    <!-- PASO 1 -->
     <div class="step active" id="s1">
       <div class="step-eyebrow">Skaler&#xF3;metro&#8482; &#xB7; Paso 1 de 6</div>
       <div class="step-h">&#xBF;C&#xF3;mo te llamas y cu&#xE1;l es tu negocio?</div>
@@ -165,8 +153,6 @@ footer{background:#1B4D45;padding:20px 24px}
       </div>
       <button class="btn-next" onclick="goStep(2)">Continuar &#x2192;</button>
     </div>
-
-    <!-- PASO 2 -->
     <div class="step" id="s2">
       <div class="step-eyebrow">Skaler&#xF3;metro&#8482; &#xB7; Paso 2 de 6</div>
       <div class="step-h">&#xBF;Qu&#xE9; vendes hoy?</div>
@@ -175,8 +161,6 @@ footer{background:#1B4D45;padding:20px 24px}
       <button class="btn-next" onclick="goStep(3)">Continuar &#x2192;</button>
       <button class="btn-back" onclick="goStep(1)">&#x2190; Atr&#xE1;s</button>
     </div>
-
-    <!-- PASO 3 -->
     <div class="step" id="s3">
       <div class="step-eyebrow">Skaler&#xF3;metro&#8482; &#xB7; Paso 3 de 6</div>
       <div class="step-h">&#xBF;Tienes claridad sobre a qui&#xE9;n le vendes?</div>
@@ -186,8 +170,6 @@ footer{background:#1B4D45;padding:20px 24px}
       <button class="btn-next" onclick="goStep(4)">Continuar &#x2192;</button>
       <button class="btn-back" onclick="goStep(2)">&#x2190; Atr&#xE1;s</button>
     </div>
-
-    <!-- PASO 4 -->
     <div class="step" id="s4">
       <div class="step-eyebrow">Skaler&#xF3;metro&#8482; &#xB7; Paso 4 de 6</div>
       <div class="step-h">&#xBF;Ya tienes ventas validadas?</div>
@@ -197,8 +179,6 @@ footer{background:#1B4D45;padding:20px 24px}
       <button class="btn-next" onclick="goStep(5)">Continuar &#x2192;</button>
       <button class="btn-back" onclick="goStep(3)">&#x2190; Atr&#xE1;s</button>
     </div>
-
-    <!-- PASO 5 -->
     <div class="step" id="s5">
       <div class="step-eyebrow">Skaler&#xF3;metro&#8482; &#xB7; Paso 5 de 6</div>
       <div class="step-h">&#xBF;C&#xF3;mo consigues clientes hoy?</div>
@@ -210,8 +190,6 @@ footer{background:#1B4D45;padding:20px 24px}
       <button class="btn-next" onclick="goStep(6)">Continuar &#x2192;</button>
       <button class="btn-back" onclick="goStep(4)">&#x2190; Atr&#xE1;s</button>
     </div>
-
-    <!-- PASO 6 -->
     <div class="step" id="s6">
       <div class="step-eyebrow">Skaler&#xF3;metro&#8482; &#xB7; Paso 6 de 6</div>
       <div class="step-h">&#xBF;Qu&#xE9; te cuesta m&#xE1;s en este momento?</div>
@@ -223,8 +201,6 @@ footer{background:#1B4D45;padding:20px 24px}
       <button class="btn-next" onclick="showResult()">Ver mi resultado &#x2192;</button>
       <button class="btn-back" onclick="goStep(5)">&#x2190; Atr&#xE1;s</button>
     </div>
-
-    <!-- RESULTADO -->
     <div class="step" id="s-result">
       <div id="sem-block"></div>
       <div class="countdown">
@@ -235,26 +211,23 @@ footer{background:#1B4D45;padding:20px 24px}
       <button class="btn-next" onclick="window.open('https://wa.me/573113053231?text=Hola,%20acab%C3%A9%20mi%20Skaler%C3%B3metro%20y%20quiero%20ver%20mi%20Plan%20de%20Acci%C3%B3n','_blank')">Ver mi Plan de Acci&#xF3;n Gratis &#x2192;</button>
       <a href="#oferta" class="btn-gold" style="display:block;margin-top:8px" onclick="closeModal()">Solucionar con Nivel 2 &#x2014; USD 97 &#x2192;</a>
     </div>
-
   </div>
 </div>
-
 <script>
 const SUPA_URL = 'https://rxbjulgtleefldgmrnzi.supabase.co';
-const SUPA_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ4Ymp1bGd0bGVlZmxkZ21ybnppIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4MzY4NTUsImV4cCI6MjA5NTQxMjg1NX0._kQsRSVYSokGDBBcwtLTD6vaVqsOF3-emfrspEVgn9Y";let current = 1;
+const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ4Ymp1bGd0bGVlZmxkZ21ybnppIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4MzY4NTUsImV4cCI6MjA5NTQxMjg1NX0._kQsRSVYSokGDBBcwtLTD6vaVqsOF3-emfrspEVgn9Y';
+let current = 1;
 const total = 6;
 const answers = {};
-
 function openModal(){ document.getElementById('modal').classList.add('open'); }
 function closeModal(){ document.getElementById('modal').classList.remove('open'); }
-
 function goStep(n){
   if(n===2){
     const name=document.getElementById('f-name').value.trim();
     const email=document.getElementById('f-email').value.trim();
     const legal=document.getElementById('legal').checked;
     if(!name||!email){alert('Por favor ingresa tu nombre y correo.');return;}
-    if(!legal){alert('Por favor acepta los Términos y Condiciones para continuar.');return;}
+    if(!legal){alert('Por favor acepta los Terminos y Condiciones para continuar.');return;}
     answers.full_name=name;
     answers.email=email;
     answers.whatsapp=document.getElementById('f-wa').value.trim();
@@ -266,57 +239,46 @@ function goStep(n){
   document.getElementById('s'+n).classList.add('active');
   document.getElementById('prog').style.width=Math.round(((n-1)/total)*100)+'%';
 }
-
 function sel(btn,group){
   btn.closest('.step').querySelectorAll('.opt').forEach(b=>b.classList.remove('sel'));
   btn.classList.add('sel');
   answers[group]=btn.textContent.trim();
 }
-
 async function showResult(){
-  const score = calcScore();
-  const sem = score>=70?'green':score>=40?'yellow':'red';
-  const blocker = answers.q6||'No identificado';
+  const score=calcScore();
+  const sem=score>=70?'green':score>=40?'yellow':'red';
+  const blocker=answers.q6||'No identificado';
   document.getElementById('s6').classList.remove('active');
   document.getElementById('s-result').classList.add('active');
   document.getElementById('prog').style.width='100%';
-
   const semLabels={
-    red:{ico:'🔴',estado:'Estado 1 · Crítico',sub:'Sobrevivencia',cls:'sem-r'},
+    red:{ico:'🔴',estado:'Estado 1 · Critico',sub:'Sobrevivencia',cls:'sem-r'},
     yellow:{ico:'🟡',estado:'Estado 2 · Estancado',sub:'Autoempleo',cls:'sem-y'},
     green:{ico:'🟢',estado:'Estado 3 · Escalable',sub:'Arquitectura activa',cls:'sem-g'}
   };
   const s=semLabels[sem];
-  document.getElementById('sem-block').innerHTML=`
-    <div class="${s.cls}">
-      <div class="score-big" style="color:${sem==='red'?'#791F1F':sem==='yellow'?'#633806':'#085041'}">${score}</div>
-      <div class="score-label" style="color:${sem==='red'?'#791F1F':sem==='yellow'?'#633806':'#085041'}">${s.ico} ${s.estado} · ${s.sub}</div>
-      <div style="font-size:12px;line-height:1.55;color:${sem==='red'?'#791F1F':sem==='yellow'?'#633806':'#085041'}"><strong>Tu bloqueo principal:</strong> ${blocker}</div>
-    </div>`;
-
+  document.getElementById('sem-block').innerHTML=`<div class="${s.cls}"><div class="score-big" style="color:${sem==='red'?'#791F1F':sem==='yellow'?'#633806':'#085041'}">${score}</div><div class="score-label" style="color:${sem==='red'?'#791F1F':sem==='yellow'?'#633806':'#085041'}">${s.ico} ${s.estado} · ${s.sub}</div><div style="font-size:12px;line-height:1.55;color:${sem==='red'?'#791F1F':sem==='yellow'?'#633806':'#085041'}"><strong>Tu bloqueo principal:</strong> ${blocker}</div></div>`;
   startCountdown();
-  await saveLead(score, sem, blocker);
+  await saveLead(score,sem,blocker);
 }
-
 function calcScore(){
   let s=50;
-  if(answers.q3==='Sí, lo tengo muy claro') s+=15;
+  if(answers.q3==='Si, lo tengo muy claro') s+=15;
   else if(answers.q3==='No, le vendo a quien pueda') s-=15;
-  if(answers.q4==='Sí, vendo de forma consistente') s+=20;
-  else if(answers.q4==='Aún no he vendido') s-=20;
+  if(answers.q4==='Si, vendo de forma consistente') s+=20;
+  else if(answers.q4==='Aun no he vendido') s-=20;
   if(answers.q6&&answers.q6.includes('tiempo')) s-=10;
   return Math.max(10,Math.min(95,s));
 }
-
-async function saveLead(score, sem, blocker){
+async function saveLead(score,sem,blocker){
   try{
-    const leadRes = await fetch(`${SUPA_URL}/rest/v1/leads`,{
+    const leadRes=await fetch(`${SUPA_URL}/rest/v1/leads`,{
       method:'POST',
       headers:{'Content-Type':'application/json','apikey':SUPA_KEY,'Authorization':`Bearer ${SUPA_KEY}`,'Prefer':'return=representation'},
       body:JSON.stringify({full_name:answers.full_name,email:answers.email,whatsapp:answers.whatsapp,city:answers.city,business_name:answers.business_name,status:'diagnosed'})
     });
-    const leads = await leadRes.json();
-    const leadId = leads[0]?.id;
+    const leads=await leadRes.json();
+    const leadId=leads[0]?.id;
     if(leadId){
       await fetch(`${SUPA_URL}/rest/v1/diagnostics_initial`,{
         method:'POST',
@@ -329,9 +291,8 @@ async function saveLead(score, sem, blocker){
         body:JSON.stringify({type:'diagnostico_completado',email:answers.email,name:answers.full_name})
       });
     }
-  }catch(e){console.log('Error guardando lead:',e);}
+  }catch(e){console.log('Error:',e);}
 }
-
 function startCountdown(){
   let sec=7199;
   const el=document.getElementById('cd');
@@ -343,10 +304,7 @@ function startCountdown(){
     el.textContent=h+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
   },1000);
 }
-
-document.getElementById('modal').addEventListener('click',function(e){
-  if(e.target===this)closeModal();
-});
+document.getElementById('modal').addEventListener('click',function(e){if(e.target===this)closeModal();});
 </script>
 </body>
 </html>
